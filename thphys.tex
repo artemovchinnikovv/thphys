@@ -1,0 +1,95 @@
+%---------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%------------------------------------------------------------------------------------
+
+
+\documentclass[1 pt]{article}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathtext}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{pgfplots}
+\usepackage[inkscapeformat=png]{svg}
+\pgfplotsset{compat=1.9}
+
+\begin {document}
+
+\begin{titlepage}
+\newcommand{\HRule}{\rule{\linewidth}{0.3 mm}} % Defines a Hnew command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\Large Московский физико-технический институт }\\[1.5cm] % Name of your university/college
+\textsc{\Large Факультет аэрокосмических технологий}\\[0.5cm] % Major heading such as course name
+\textsc{\large Кафедра теоретической физики}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Конспект теорфиза }\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Автор:}\\ Артем \textsc{Овчинников} % Your name
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Преподаватель:} \\
+Эмиль Тофикович \textsc{Ахмедов} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[4cm]
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+ 
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+\tableofcontents
+\newpage
+\section{23.04.24: Дифференцирование тензоров}
+\begin{equation}
+    rot \frac{\overline{x}}{(\overline{k}, \overline{x})} = ?, \; \overline{k} = \overline{const}
+\end{equation}
+\begin{equation*}
+    rot \frac{\overline{x}}{(\overline{k}, \overline{x})} = e_{ijk} d_{j} \frac{x_k}{k_l x_l} = e_{ijk} \frac{k_n x_n \cdot d_j x_k - x_k k_t d_j x_t }{(k_l x_l)^2} = e_{ijk} \frac{k_n x_n \delta_{jk} - x_k k_t \delta_{jt}}{(\overline{k}, \overline{x})^2}
+\end{equation*}
+\begin{equation*}
+    e_{ijk} \delta_{jk} = 0 \; (j=k, e_{ijj}=0)
+\end{equation*}
+\begin{equation*}
+    e_{ijk} \delta_{jt} = e_{itk} \; (j=t)
+\end{equation*}
+\begin{equation*}
+    rot \frac{\overline{x}}{(\overline{k}, \overline{x})} = e_{itk} \frac{ - x_k k_t}{(\overline{k}, \overline{x})^2} = e_{ikt} \frac{ x_k k_t}{(\overline{k}, \overline{x})^2} = \frac{[x, k]}{(\overline{k}, \overline{x})^2}
+\end{equation*}
+\begin{equation}
+    rot \frac{\overline{x}}{(\overline{k}, \overline{x})} = \frac{[x, k]}{(\overline{k}, \overline{x})^2}
+\end{equation}
+\begin{equation}
+    rot rot \frac{\overline{k}}{|\overline{r}|} = ?, \; \overline{k} = \overline{const}
+\end{equation}
+\end{document}
