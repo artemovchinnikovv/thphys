@@ -92,4 +92,109 @@
 \begin{equation}
     rot rot \frac{\overline{k}}{|\overline{r}|} = ?, \; \overline{k} = \overline{const}
 \end{equation}
+
+\section{07.05.24: Квантовый осциллятор}
+\begin{equation}
+    \frac{1}{2}(x^2-\frac{d^2}{dx^2}) \Psi(x) = E \Psi(x), \; \int_{- \infty}^{+ \infty} dx |\Psi(x)|^2 = 1, \; \Psi(x) = ?, \; E = ?
+\end{equation}
+\begin{equation*}
+    a = \frac{1}{\sqrt{2}}(x+\frac{d}{dx})
+\end{equation*}
+\begin{equation*}
+    a^+ = \frac{1}{\sqrt{2}}(x-\frac{d}{dx})
+\end{equation*}
+\begin{equation*}
+    [a^+, a] = a^+ a - aa^+ = \frac{1}{2}((x-\frac{d}{dx})(x+\frac{d}{dx})-(x+\frac{d}{dx})(x-\frac{d}{dx}))
+\end{equation*}
+\begin{equation*}
+    [a^+, a] = \frac{1}{2}(xx+x\frac{d}{dx}-x\frac{d}{dx}-1-\frac{d^2}{dx^2}-xx+x\frac{d}{dx}-x\frac{d}{dx}-1+\frac{d^2}{dx^2})
+\end{equation*}
+\begin{equation*}
+    [a^+, a] = -1
+\end{equation*}
+\begin{equation*}
+    a^+a+aa^+ = \frac{1}{2}(xx+x\frac{d}{dx}-x\frac{d}{dx}-1-\frac{d^2}{dx^2}+xx-x\frac{d}{dx}+x\frac{d}{dx}+1-\frac{d^2}{dx^2})
+\end{equation*}
+\begin{equation*}
+    a^+a+aa^+ = x^2 - \frac{d^2}{dx^2}
+\end{equation*}
+\begin{equation*}
+    H = \frac{1}{2}(a^+a+aa^+) = \frac{1}{2}(2a^+a+1) = a^+a+\frac{1}{2}
+\end{equation*}
+\begin{equation*}
+    (a^+a+\frac{1}{2}) \Psi(x) = E \Psi(x)
+\end{equation*}
+\begin{equation*}
+    a \Psi_0(x) = 0
+\end{equation*}
+\begin{equation}
+    \frac{1}{2} \Psi(x) = E \Psi(x), \; E_0 = \frac{1}{2}
+\end{equation}
+\begin{equation*}
+    \frac{1}{\sqrt{2}}(x+\frac{d}{dx}) \Psi_0(x) = 0
+\end{equation*}
+\begin{equation}
+    \Psi_0(x) = A \cdot exp(-\frac{x^2}{2})
+\end{equation}
+\begin{equation*}
+    x \cdot exp(-\frac{x^2}{2})+\frac{d}{dx} exp(-\frac{x^2}{2}) = 0
+\end{equation*}
+\begin{equation*}
+    x \cdot exp(-\frac{x^2}{2})-exp(-\frac{x^2}{2})x = 0
+\end{equation*}
+\begin{equation*}
+    \int_{- \infty}^{+ \infty} dx |A \cdot exp(-\frac{x^2}{2})|^2 = 1
+\end{equation*}
+\begin{equation}
+    \int_{- \infty}^{+ \infty} dx |exp(-x^2)| = \frac{1}{A^2} = \sqrt{\pi}, \; A_0=\frac{1}{\pi^{1/4}}
+\end{equation}
+\begin{equation*}
+    \Psi_1(x) = a^+ \Psi_0(x) = \frac{1}{\sqrt{2}}(x-\frac{d}{dx}) \frac{1}{\pi^{1/4}} \cdot exp(-\frac{x^2}{2})
+\end{equation*}
+\begin{equation}
+    \Psi_1(x) = A_1 a^+ \Psi_0(x) = A_1 \frac{\sqrt{2}}{\pi^{1/4}} \cdot exp(-\frac{x^2}{2}) x, \; A_1 = ?
+\end{equation}
+\begin{equation*}
+    (a^+a+\frac{1}{2}) \Psi_1(x) = E_1 \Psi_1 (x)
+\end{equation*}
+\begin{equation*}
+    (a^+a+\frac{1}{2}) a^+ \Psi_0(x) = E_1 a^+ \Psi_0(x)
+\end{equation*}
+\begin{equation*}
+    a^+a a^+ = a^+ (a^+ a + 1)
+\end{equation*}
+\begin{equation*}
+    a^+ (a^+ a + 1) \Psi_0(x)+\frac{1}{2} a^+ \Psi_0(x) = E_1 a^+ \Psi_0(x)
+\end{equation*}
+\begin{equation}
+    a \Psi_0(x) = 0 \Rightarrow E_1 = 1+ \frac{1}{2} = \frac{3}{2}
+\end{equation}
+\begin{equation}
+    \Psi_n(x) = A_n (a^+)^n \Psi_0(x), \; E_n = ?
+\end{equation}
+\begin{equation*}
+    (a^+a+\frac{1}{2}) \Psi_{n+1}(x) = E_{n+1} \Psi_{n+1} (x), \; \Psi_{n+1}(x) = A_{n+1} a^+ \Psi_n (x)
+\end{equation*}
+\begin{equation*}
+    (a^+a+\frac{1}{2}) a^+ \Psi_n (x) = E_{n+1} a^+ \Psi_n (x)
+\end{equation*}
+\begin{equation*}
+    (a^+a+\frac{1}{2}) \Psi_{n}(x) = E_{n} \Psi_{n} (x)
+\end{equation*}
+\begin{equation*}
+    a^+ (a^+ a + 1) \Psi_n (x)+\frac{1}{2} a^+ \Psi_n (x) = E_{n+1} a^+ \Psi_n (x)
+\end{equation*}
+\begin{equation*}
+    a^+ (E_n + \frac{1}{2}) \Psi_n (x)+\frac{1}{2} a^+ \Psi_n (x) = E_{n+1} a^+ \Psi_n (x)
+\end{equation*}
+\begin{equation*}
+    E_n + 1 = E_{n+1}
+\end{equation*}
+\begin{equation*}
+    E_n = E_0 + n
+\end{equation*}
+\begin{equation}
+    E_n = \frac{1}{2} + n
+\end{equation}
+
 \end{document}
